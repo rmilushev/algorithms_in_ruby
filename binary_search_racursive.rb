@@ -2,12 +2,12 @@
 # It is implemented like method of the standart Array class
 
 class Array
+  
   def binary_search(val, left = 0, right = nil)
   
   right = self.size unless right
-  
   mid = (left + right) / 2
-  
+
   return nil if left > right
   
     if val == self[mid]
